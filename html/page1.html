@@ -1,0 +1,57 @@
+
+<!--
+
+IDPF ePub Widget Framework
+MIT License
+Demos: http://widgets.chaucercloud.com
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>IDPF Widgets - Text Resizer Sample</title>
+		
+		<script type="text/javascript" src="../package/book-shared/external/mootools-core-1.4.5-full-nocompat-yc.js"></script>
+		<script type="text/javascript" src="../package/book-shared/external/mootools-more-1.4.0.1-yc.js"></script>
+		<script type="text/javascript" src="../package/book-shared/common.js"></script>
+		
+		<script type="text/javascript" src="../package/widgets/text-resizer/book/text-resizer.js"></script>
+		<link rel="stylesheet" type="text/css" href="../package/widgets/text-resizer/book/text-resizer.css">
+        		<script type="text/javascript" src="../package/widgets/popup/book/popup.js"></script>
+		<link rel="stylesheet" type="text/css" href="../package/widgets/popup/book/popup.css">
+		
+		<link rel="stylesheet" type="text/css" href="../package/shared/css/common.sample.css">
+		<script type="text/javascript">
+			window.addEvent('domready', function () {
+				new epubWidget.TextResizer($('sample'), {target: $('sample-content')});
+				new epubWidget.Popup($('sample1'),
+					'<p>In addition to throngs of people crowding highways and beaches near the launch site, millions watched the event on television, with NASA Chief of Public Information Jack King providing commentary. President Richard M. Nixon viewed the proceedings from the Oval Office of the White House. <br/><br/> A Saturn V launched Apollo 11 from Launch Pad 39A, part of the Launch Complex 39 site at the Kennedy Space Center on July 16, 1969 at 13:32:00 UTC (9:32:00 a.m. EDT local time). It entered orbit twelve minutes later.[1] After one and a half orbits, the S-IVB third-stage engine pushed the spacecraft onto its trajectory toward the Moon with the trans-lunar injection (TLI) burn at 16:22:13 UTC. About 30 minutes later the command/service module pair separated from this last remaining Saturn V stage and docked with the Lunar Module still nestled in the Lunar Module Adaptor. After the Lunar Module was extracted, the combined spacecraft headed for the Moon, while the third stage booster flew on a trajectory past the Moon and into heliocentric orbit. <br/><br/>On July 19 at 17:21:50 UTC, Apollo 11 passed behind the Moon and fired its service propulsion engine to enter lunar orbit. In the thirty orbits[16] that followed, the crew saw passing views of their landing site in the southern Sea of Tranquility (Mare Tranquillitatis) about 12 miles (19 km) southwest of the crater Sabine D (0.67408N, 23.47297E). The landing site was selected in part because it had been characterized as relatively flat and smooth by the automated Ranger 8 and Surveyor 5 landers along with the Lunar Orbiter mapping spacecraft and unlikely to present major landing or extra-vehicular activity (EVA) challenges.</p>',
+					{
+						'title':'Launch and flight to lunar orbit', 
+						'size':{width: 500, height:200},
+						closeBtn: true
+					}
+				);
+			});
+		</script>
+	</head>
+
+	<body>
+		<h1>Apollo 11</h1>
+		<div id="sample"></div>
+		<hr/>
+		<div id="sample-content">			
+			<p>Apollo 11 was the spaceflight that landed the first humans on the Moon, Americans Neil Armstrong and Buzz Aldrin, on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface six hours later on July 21 at 02:56 UTC. Armstrong spent about two and a half hours outside the spacecraft, Aldrin slightly less, and together they collected 47.5 pounds (21.5 kg) of lunar material for return to Earth. A third member of the mission, Michael Collins, piloted the command spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it just under a day later for the trip back to Earth.</p>
+
+			<p>Launched by a Saturn V rocket from Kennedy Space Center in Merritt Island, Florida, on July 16, Apollo 11 was the fifth manned mission of NASA's Apollo program. The Apollo spacecraft had three parts: a Command Module (CM) with a cabin for the three astronauts, and the only part that landed back on Earth; a Service Module (SM), which supported the Command Module with propulsion, electrical power, oxygen, and water; and a Lunar Module (LM) for landing on the Moon. After being sent toward the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and traveled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the Sea of Tranquility. They stayed a total of about 21½ hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the Pacific Ocean on July 24. </p>
+            <p>Broadcast on live TV to a world-wide audience, Armstrong stepped onto the lunar surface and described the event as "one small step for [a] man, one giant leap for mankind." Apollo 11 effectively ended the Space Race and fulfilled a national goal proposed in 1961 by the late U.S. President John F. Kennedy in a speech before the U.S. Congress: "before this decade is out, of landing a man on the Moon and returning him safely to the Earth. <span><a href="#" id="sample1">Mission Highlights</a></span></p>
+		</div>
+        
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!--
+
+IDPF ePub Widget Framework
+MIT License
+Demos: http://widgets.chaucercloud.com
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>IDPF Widgets - Video Sample</title>
+		
+		<script type="text/javascript" src="../package/book-shared/external/mootools-core-1.4.5-full-nocompat-yc.js"></script>
+		<script type="text/javascript" src="../package/book-shared/external/mootools-more-1.4.0.1-yc.js"></script>
+		<script type="text/javascript" src="../package/book-shared/common.js"></script>
+		
+		<script type="text/javascript" src="../package/widgets/video/book/video.js"></script>
+        <script type="text/javascript" src="../package/widgets/scrolling-sidebar/book/scrolling-sidebar.js"></script>
+        <script type="text/javascript" src="../package/widgets/audio/book/audio.js"></script>
+		<link rel="stylesheet" type="text/css" href="../package/widgets/audio/book/audio.css">
+		<link rel="stylesheet" type="text/css" href="../package/widgets/video/book/video.css">
+        <link rel="stylesheet" type="text/css" href="../package/widgets/scrolling-sidebar/book/scrolling-sidebar.css">
+		
+		<link rel="stylesheet" type="text/css" href="../package/shared/css/common.sample.css">
+        <link rel="stylesheet" type="text/css" href="../package/shared/css/bootstrap.min.css">
+		<script type="text/javascript">
+			window.addEvent('domready', function () {
+				new epubWidget.Video($('sample'), '../assets/Apollo11.mp4', {posterImageUrl: '../assets/image1', altText:'Sample alt text', autoPlay: false, subtitles: '../shared/sample.vtt'});
+				new epubWidget.ScrollingSidebar($('sample1'), {header: 'Landing', footer: 'Now You Know', content: "When Armstrong again looked outside, he saw that the computer's landing target was in a boulder-strewn area just north and east of a 300-meter (980 ft) diameter crater (later determined to be 'West crater,' named for its location in the western part of the originally planned landing ellipse).<br/>Armstrong took semi-automatic control and, with Aldrin calling out altitude and velocity data, landed at 20:17:40 UTC on July 20 with about 25 seconds of fuel left. Apollo 11 landed with less fuel than other missions, and the astronauts encountered a premature low fuel warning. This was later found to be the result of greater propellant 'slosh' than expected, uncovering a fuel sensor. On subsequent missions, extra anti-slosh baffles were added to the tanks to prevent this.<br/>Throughout the descent Aldrin had called out navigation data to Armstrong, who was busy piloting the LM. A few moments before the landing, a light informed Aldrin that at least one of the 67-inch (170 cm) probes hanging from Eagle's footpads had touched the surface, and he said 'Contact light!' Three seconds later, Eagle landed and Armstrong said 'Shutdown.' Aldrin immediately said 'Okay, engine stop. ACA – out of detent.' Armstrong acknowledged 'Out of detent. Auto' and Aldrin continued 'Mode control – both auto. Descent engine command override off. Engine arm – off. 413 is in.'", width: 500, height:350});
+				
+				new epubWidget.Audio($('sample2'), '../assets/First_Moon.mp3', {
+					autoPlay: false
+				});
+			});			
+		
+		</script>
+	</head>
+
+	<body>
+	  	 <div class="col-xs-12"> <h3 > LANDING</h3></div>
+        <div  id="sample" class="col-xs-12"></div>
+		<br/>
+        <div class="col-xs-12" id="sample1"> </div> 
+        <br/>
+		<div id="sample2"  class="col-xs-12"> </div>  
+         <br/>
+      
+	</body>
+</html>
